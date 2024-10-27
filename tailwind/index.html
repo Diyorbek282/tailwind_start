@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Custom Shadows</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- GOOGLE FONTS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        font-family: Jost;
+      }
+
+      .back_image_velo {
+        background-image: url(./images/3.png);
+        width: 1380px;
+        height: 421px;
+      }
+
+      .for_back_image_section_2 {
+        background-image: url(./images/Group\ 1867.png);
+        width: 242px;
+        height: 230px;
+        border-top-right-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="text-nowrap">
+      <div class="flex justify-center items-center h-10">
+        <div class="flex gap-7 items-center">
+          <ul class="flex gap-8 py-3">
+            <li
+              class="font-normal text-xs leading-3 text-[#5D6C7B] hover:text-[#6F73EE]"
+            >
+              <a href="#">Сервис</a>
+            </li>
+            <li
+              class="font-normal text-xs leading-3 text-[#5D6C7B] hover:text-[#6F73EE]"
+            >
+              <a href="#">Сотрудничество</a>
+            </li>
+            <li
+              class="font-normal text-xs leading-3 text-[#5D6C7B] hover:text-[#6F73EE]"
+            >
+              <a href="#">Заказать звонок</a>
+            </li>
+          </ul>
+          <ul class="flex gap-2 items-center">
+            <li>
+              <a href="#"
+                ><i
+                  class="fa-brands fa-viber text-[#5D6C7B] hover:text-[#6F73EE]"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i
+                  class="fa-brands fa-whatsapp text-[#5D6C7B] hover:text-[#6F73EE]"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i
+                  class="fa-brands fa-telegram text-[#5D6C7B] hover:text-[#6F73EE]"
+                ></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex gap-2 items-center ml-[626px]">
+          <p class="font-normal text-xs leading-3 text-[#282739]">
+            +7 (800) 505-54-61
+          </p>
+          <i
+            class="fa-thin fa-plus hover:text-[#6F73EE] text-[#5D6C7B] w-4 h-4 border border-solid border-[#5D6C7B] rounded-full flex items-center justify-center p-1.5"
+          ></i>
+        </div>
+      </div>
+      <div class="border-b mb-[20px] text-[#ECF3FF]"></div>
+      <div class="flex justify-center items-center">
+        <h1 class="font-bold text-3xl leading-10 text-[#282739]">KUGGO</h1>
+
+        <div
+          class="bg-[#6F73EE] border border-transparent hover:border-[#6F73EE] cursor-pointer font-normal text-xs leading-6 rounded-[5px] py-[9px] pr-[18px] ml-[35px] text-[#FFFFFF] hover:text-[#6F73EE] hover:bg-[#FFFFFF]"
+        >
+          <i class="fa-solid fa-bars pl-[15px]"></i>
+          <button class="pl-[15px]">Каталог</button>
+        </div>
+
+        <div
+          class="flex items-center ml-[20px] mr-[40px] border-solid border-[#6F73EE] border rounded-[5px]"
+        >
+          <select
+            class="my-[4px] ml-[4px] mr-[20px] py-[6px] pl-[14px] pr-[4px] bg-[#F4F7FB] border-none py-[6px] font-normal text-sm leading-5"
+          >
+            <i class="fa-solid fa-triangle pr-[12px]"></i>
+            <option value="" disabled selected>Везде</option>
+            <option value="option1">Variant 1</option>
+            <option value="option2">Variant 2</option>
+            <option value="option3">Variant 3</option>
+          </select>
+          <p
+            class="pl-[20px] pr-[328px] font-normal text-sm leading-6 text-[#5D6C7B]"
+          >
+            Искать самокат KUGO
+          </p>
+          <i
+            class="fa-solid fa-magnifying-glass p-[15px] bg-[#6F73EE] text-[#FFFFFF]"
+          ></i>
+        </div>
+        <div class="flex gap-[20px] items-center">
+          <i
+            class="fa-solid fa-scale-balanced text-[#282739] hover:text-[#6F73EE] cursor-pointer"
+          ></i>
+          <i
+            class="fa-regular fa-heart text-[#282739] hover:text-[#6F73EE] cursor-pointer"
+          ></i>
+          <i
+            class="fa-solid fa-basket-shopping text-[#282739] hover:text-[#6F73EE] cursor-pointer"
+          >
+            <span class="ml-[2px] text-sm leading-5 font-normal"
+              >Корзина</span
+            ></i
+          >
+        </div>
+      </div>
+      <div
+        class="mt-[45px] py-[10px] bg-[#F4F7FB] font-normal text-sm leading-5 pr-[250px]"
+      >
+        <ul class="flex items-center gap-[50px] justify-center">
+          <li
+            class="py-[3px] px-[8px] hover:text-[#ffffff] hover:rounded-[30px] hover:py-[3px] hover:px-[8px] hover:bg-[#6F73EE]"
+          >
+            <a href="#">О магазине</a>
+          </li>
+          <div class="flex items-center gap-[8px]">
+            <li
+              class="py-[3px] px-[8px] hover:text-[#ffffff] hover:rounded-[30px] hover:py-[3px] hover:px-[8px] hover:bg-[#6F73EE]"
+            >
+              <a href="#">Доставка и оплата</a>
+            </li>
+            <li
+              class="py-[3px] px-[8px] hover:text-[#ffffff] hover:rounded-[30px] hover:py-[3px] hover:px-[8px] hover:bg-[#6F73EE]"
+            >
+              <a href="#">Доступна рассрочка</a>
+            </li>
+          </div>
+          <li
+            class="py-[3px] px-[8px] hover:text-[#ffffff] hover:rounded-[30px] hover:py-[3px] hover:px-[8px] hover:bg-[#6F73EE]"
+          >
+            <a href="#">Тест-драйв</a>
+          </li>
+          <li
+            class="py-[3px] px-[8px] hover:text-[#ffffff] hover:rounded-[30px] hover:py-[3px] hover:px-[8px] hover:bg-[#6F73EE]"
+          >
+            <a href="#">Блог</a>
+          </li>
+          <li
+            class="py-[3px] px-[8px] hover:text-[#ffffff] hover:rounded-[30px] hover:py-[3px] hover:px-[8px] hover:bg-[#6F73EE]"
+          >
+            <a href="#">Контакты</a>
+          </li>
+          <div class="flex items-center">
+            <li
+              class="py-[3px] px-[8px] hover:text-[#ffffff] hover:rounded-[30px] hover:py-[3px] hover:px-[8px] hover:bg-[#6F73EE]"
+            >
+              <a href="#">Акции</a>
+            </li>
+            <i
+              class="fa-solid fa-percent border rounded-full bg-[#6F73EE] text-[#FFFFFF] p-[5px] font-normal text-[10px] leading-3"
+            ></i>
+          </div>
+        </ul>
+      </div>
+    </header>
+    <section>
+      <div class="flex justify-center mb-[40px]">
+        <div
+          class="back_image_velo flex pl-[120px] pt-[45px] pb-[30px] items-center mt-[30px]"
+        >
+          <div class="">
+            <button
+              class="border border-[#FFFFFF] border-solid text-[#ffffff] font-normal leading-5 text-sm mb-[36px] px-[10px] py-[4px] hover:text-[#6F73EE] hover:bg-[#ffffff] hover:rounded-[5px]"
+            >
+              Новинка
+            </button>
+            <h1
+              class="font-semibold mb-[7px] leading-[3.125rem] text-[35px] w-[500px] text-[#ffffff]"
+            >
+              Электросамокаты Kugoo Kirin от официального дилера
+            </h1>
+            <p class="font-normal text-xs leading-7 text-sm text-[#ffffff]">
+              с бесплатной доставкой по РФ от 1 дня
+            </p>
+            <div>
+              <button
+                class="text-[#6F73EE] border px-[25px] py-[15px] bg-[#ffffff] rounded-[5px] mt-[25px] hover:text-[#ffffff] hover:bg-[#6F73EE]"
+              >
+                Перейти в католог
+              </button>
+              <button
+                class="py-[13px] px-[18px] bg-[#FFFFFF33] ml-[320px] rounded-[5px] text-[#ffffff]"
+              >
+                ⚡ Тест-драйв и обучение
+              </button>
+            </div>
+            <div class="mt-[-10px]">
+              <button
+                class="text-[#6F73EE] bg-white py-[4px] px-[10px] rounded-[5px] ml-[620px] font-normal"
+              >
+                Бесплатно
+              </button>
+            </div>
+            <div class="flex items-center gap-[15px] mt-[46px]">
+              <i
+                class="fa-solid fa-arrow-left border border-[#FFFFFF33] rounded-full p-[10px] text-[#ffffff]"
+              ></i>
+              <div class="flex gap-[11px] items-center">
+                <span class="font-normal text-[16px] leading-5 text-[#ffffff]"
+                  >1</span
+                >
+                <div class="w-[34px] border border-[#8E91F2] bg-[#8E91F2]">
+                  <div class="w-[15px] border border-[#ffffff] bg-white"></div>
+                </div>
+
+                <span class="font-normal text-[16px] leading-5 text-[#ffffff]"
+                  >5</span
+                >
+              </div>
+              <i
+                class="fa-solid fa-arrow-right border border-[#FFFFFF33] rounded-full p-[10px] text-[#ffffff]"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <div>
+          <h2 class="text-[#282739] font-semibold text-3xl">Гарантия 1 год</h2>
+          <p class="text-base text-[#282739] font-normal">
+            на весь ассортимент
+          </p>
+        </div>
+        <div class="ml-[78px]">
+          <h2 class="text-[#282739] font-semibold text-3xl">Рассрочка</h2>
+          <p class="text-base text-[#282739] font-normal">от 6 месяцев</p>
+        </div>
+        <div class="ml-[138px]">
+          <h2 class="text-[#282739] font-semibold text-3xl">Подарки</h2>
+          <p class="text-base text-[#282739] font-normal">
+            и бонусам к покупкам
+          </p>
+        </div>
+        <div
+          class="mb-[80px] ml-[196px] flex gap-[18px] items-center border border-solid py-[10px] pl-[10px] pr-[27px] border-[#5D6C7B1A] rounded-[5px]"
+        >
+          <div>
+            <img
+              src="./images/Glyph.png"
+              alt=""
+              class="bg-[#FC3F1D] py-[14px] px-[18px] rounded-[5px] shadow-lg shadow-[#FC3F1D]"
+            />
+          </div>
+          <div>
+            <p class="font-normal text-xs text-[#5D6C7B]">Яндекс отзывы</p>
+            <i class="fa-solid fa-star text-[#FFD12E]"></i>
+            <span class="font-semibold text-2xl">4,9</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="flex items-center justify-center mb-[50px]">
+        <h1 class="font-semibold text-5xl text-[#282739]">Электросамокаты</h1>
+        <div class="flex gap-[10px] items-center ml-[250px]">
+          <button
+            class="font-normal text-xs py-[10px] px-[20px] bg-[#F4F7FB] rounded-[5px] border border-[#F4F7FB] text-[#5D6C7B] hover:border-[#6F73EE] hover:bg-[#ffffff] hover:text-[#6F73EE]"
+          >
+            Хиты продаж
+          </button>
+          <button
+            class="font-normal text-xs py-[10px] px-[20px] bg-[#F4F7FB] rounded-[5px] border border-[#F4F7FB] text-[#5D6C7B] hover:border-[#6F73EE] hover:bg-[#ffffff] hover:text-[#6F73EE]"
+          >
+            Для города
+          </button>
+          <button
+            class="font-normal text-xs py-[10px] px-[20px] bg-[#F4F7FB] rounded-[5px] border border-[#F4F7FB] text-[#5D6C7B] hover:border-[#6F73EE] hover:bg-[#ffffff] hover:text-[#6F73EE]"
+          >
+            Для взрослых
+          </button>
+          <button
+            class="font-normal text-xs py-[10px] px-[20px] bg-[#F4F7FB] rounded-[5px] border border-[#F4F7FB] text-[#5D6C7B] hover:border-[#6F73EE] hover:bg-[#ffffff] hover:text-[#6F73EE]"
+          >
+            Для детей
+          </button>
+        </div>
+      </div>
+      <div>
+        <div
+          class="flex flex-wrap items-center justify-center gap-[30px] mb-[30px]"
+        >
+          <div class="border border-[#EAEBED] rounded-[10px]">
+            <div class="for_back_image_section_2 px-[10px] py-[10px]">
+              <div class="flex items-center justify-between mb-[50px]">
+                <p
+                  class="px-[5px] py-[px] bg-[#EE685F] rounded-[5px] text-[#ffffff] font-normal text-xs px-[8px] py-[5px] cursor-pointer"
+                >
+                  ХИТ
+                </p>
+                <i
+                  class="fa-solid fa-scale-balanced cursor-pointer p-[8px] bg-[#FFFFFF33] text-[#5D6C7B] backdrop-blur-sm rounded-full"
+                ></i>
+              </div>
+              <div class="flex justify-between items-center">
+                <button>
+                  <i
+                    class="fa-solid fa-arrow-left py-[8px] px-[8px] bg-[#FFFFFF] rounded-full text-[#6F73EE]"
+                  ></i>
+                </button>
+                <button>
+                  <i
+                    class="fa-solid fa-arrow-right py-[8px] px-[8px] bg-[#FFFFFF] rounded-full text-[#6F73EE]"
+                  ></i>
+                </button>
+              </div>
+            </div>
+            <div class="my-[20px] px-[16px]">
+              <h4 class="font-semibold text-lg text-[#282739]">
+                Kugoo Kirin M4
+              </h4>
+              <div class="flex gap-[24px] items-center mb-[17px] mt-[21px]">
+                <div class="flex gap-[10px]">
+                  <i class="fa-solid fa-car-battery text-[#5D6C7B]"></i>
+                  <p class="font-normal text-xs text-[#5D6C7B]">2000 mAh</p>
+                </div>
+                <div class="flex gap-[10px]">
+                  <i class="fa-solid fa-gauge text-[#5D6C7B]"></i>
+                  <p class="font-normal text-xs text-[#5D6C7B]">1,2 л.с.</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-[38px] mb-[25px]">
+                <div class="flex gap-[10px]">
+                  <i class="fa-solid fa-gauge text-[#5D6C7B]"></i>
+                  <p class="font-normal text-xs text-[#5D6C7B]">60 км/ч</p>
+                </div>
+                <div class="flex gap-[10px]">
+                  <i class="fa-solid fa-stopwatch text-[#5D6C7B]"></i>
+                  <p class="font-normal text-xs text-[#5D6C7B]">5 часов</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-[28px] mb-[16px]">
+                <div>
+                  <del class="font-normal text-xs text-[#5D6C7B]">39 900 ₽</del>
+                  <h3 class="font-semibold text-xl text-[#282739]">29 900 ₽</h3>
+                </div>
+                <div class="mt-[10px]">
+                  <i
+                    class="fa-solid fa-basket-shopping p-[10px] border-[#EAEBED] border text-[#6F73EE] rounded-full"
+                  ></i>
+                  <i
+                    class="fa-regular fa-heart p-[10px] border-[#EAEBED] border text-[#6F73EE] rounded-full"
+                  ></i>
+                </div>
+              </div>
+              <button
+                class="py-[10px] px-[64px] bg-[#6F73EE] border-[#6F73EE] border hover:bg-[#ffffff] hover:text-[#6F73EE] rounded-[5px] text-[#FFFFFF] font-normal text-[#ffffff] text-xs"
+              >
+                Купить в 1 клик
+              </button>
+            </div>
+          </div>
+          <div class="border border-[#EAEBED] rounded-[10px]">
+            <div class="for_back_image_section_2 px-[10px] py-[10px]">
+              <div class="flex items-center justify-between mb-[50px]">
+                <p
+                  class="px-[5px] py-[px] bg-[#75D14A] rounded-[5px] text-[#ffffff] font-normal text-xs px-[8px] py-[5px] cursor-pointer"
+                >
+                  Новинка
+                </p>
+                <i
+                  class="fa-solid fa-scale-balanced cursor-pointer p-[8px] bg-[#FFFFFF33] text-[#5D6C7B] backdrop-blur-sm rounded-full"
+                ></i>
+              </div>
+              <div class="flex justify-between items-center">
+                <button>
+                  <i
+                    class="fa-solid fa-arrow-left py-[8px] px-[8px] bg-[#FFFFFF] rounded-full text-[#6F73EE]"
+                  ></i>
+                </button>
+                <button>
+                  <i
+                    class="fa-solid fa-arrow-right py-[8px] px-[8px] bg-[#FFFFFF] rounded-full text-[#6F73EE]"
+                  ></i>
+                </button>
+              </div>
+            </div>
+            <div class="my-[20px] px-[16px]">
+              <h4 class="font-semibold text-lg text-[#282739]">
+                Kugoo Kirin M4
+              </h4>
+              <div class="flex gap-[24px] items-center mb-[17px] mt-[21px]">
+                <div class="flex gap-[10px]">
+                  <i class="fa-solid fa-car-battery text-[#5D6C7B]"></i>
+                  <p class="font-normal text-xs text-[#5D6C7B]">2000 mAh</p>
+                </div>
+                <div class="flex gap-[10px]">
+                  <i class="fa-solid fa-gauge text-[#5D6C7B]"></i>
+                  <p class="font-normal text-xs text-[#5D6C7B]">1,2 л.с.</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-[38px] mb-[25px]">
+                <div class="flex gap-[10px]">
+                  <i class="fa-solid fa-gauge text-[#5D6C7B]"></i>
+                  <p class="font-normal text-xs text-[#5D6C7B]">60 км/ч</p>
+                </div>
+                <div class="flex gap-[10px]">
+                  <i class="fa-solid fa-stopwatch text-[#5D6C7B]"></i>
+                  <p class="font-normal text-xs text-[#5D6C7B]">5 часов</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-[28px] mb-[16px]">
+                <div>
+                  <del class="font-normal text-xs text-[#5D6C7B]">39 900 ₽</del>
+                  <h3 class="font-semibold text-xl text-[#282739]">29 900 ₽</h3>
+                </div>
+                <div class="mt-[10px]">
+                  <i
+                    class="fa-solid fa-basket-shopping p-[10px] border-[#EAEBED] border text-[#6F73EE] rounded-full"
+                  ></i>
+                  <i
+                    class="fa-regular fa-heart p-[10px] border-[#EAEBED] border text-[#6F73EE] rounded-full"
+                  ></i>
+                </div>
+              </div>
+              <button
+                class="flex items-center py-[10px] px-[64px] bg-[#6F73EE] border-[#6F73EE] border hover:bg-[#ffffff] hover:text-[#6F73EE] rounded-[5px] text-[#FFFFFF] font-normal text-[#ffffff] text-xs"
+              >
+                Купить в 1 клик
+              </button>
+            </div>
+          </div>
+          <div class="border border-[#EAEBED] rounded-[10px]">
+            <div class="for_back_image_section_2 px-[10px] py-[10px]">
+              <div class="flex items-center justify-between mb-[50px]">
+                <p
+                  class="px-[5px] py-[px] bg-[#EE685F] rounded-[5px] text-[#ffffff] font-normal text-xs px-[8px] py-[5px] cursor-pointer"
+                >
+                  ХИТ
+                </p>
+                <i
+                  class="fa-solid fa-scale-balanced cursor-pointer p-[8px] bg-[#FFFFFF33] text-[#5D6C7B] backdrop-blur-sm rounded-full"
+                ></i>
+              </div>
+              <div class="flex justify-between items-center">
+                <button>
+                  <i
+                    class="fa-solid fa-arrow-left py-[8px] px-[8px] bg-[#FFFFFF] rounded-full text-[#6F73EE]"
+                  ></i>
+                </button>
+                <button>
+                  <i
+                    class="fa-solid fa-arrow-right py-[8px] px-[8px] bg-[#FFFFFF] rounded-full text-[#6F73EE]"
+                  ></i>
+                </button>
+              </div>
+            </div>
+            <div class="my-[20px] px-[16px]">
+              <h4 class="font-semibold text-lg text-[#282739]">
+                Kugoo Kirin M4
+              </h4>
+              <div class="flex gap-[24px] items-center mb-[17px] mt-[21px]">
+                <div class="flex gap-[10px]">
+                  <i class="fa-solid fa-car-battery text-[#5D6C7B]"></i>
+                  <p class="font-normal text-xs text-[#5D6C7B]">2000 mAh</p>
+                </div>
+                <div class="flex gap-[10px]">
+                  <i class="fa-solid fa-gauge text-[#5D6C7B]"></i>
+                  <p class="font-normal text-xs text-[#5D6C7B]">1,2 л.с.</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-[38px] mb-[25px]">
+                <div class="flex gap-[10px]">
+                  <i class="fa-solid fa-gauge text-[#5D6C7B]"></i>
+                  <p class="font-normal text-xs text-[#5D6C7B]">60 км/ч</p>
+                </div>
+                <div class="flex gap-[10px]">
+                  <i class="fa-solid fa-stopwatch text-[#5D6C7B]"></i>
+                  <p class="font-normal text-xs text-[#5D6C7B]">5 часов</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-[28px] mb-[16px]">
+                <div>
+                  <del class="font-normal text-xs text-[#5D6C7B]">39 900 ₽</del>
+                  <h3 class="font-semibold text-xl text-[#282739]">29 900 ₽</h3>
+                </div>
+                <div class="mt-[10px]">
+                  <i
+                    class="fa-solid fa-basket-shopping p-[10px] border-[#EAEBED] border text-[#6F73EE] rounded-full"
+                  ></i>
+                  <i
+                    class="fa-regular fa-heart p-[10px] border-[#EAEBED] border text-[#6F73EE] rounded-full"
+                  ></i>
+                </div>
+              </div>
+              <button
+                class="py-[10px] px-[64px] bg-[#6F73EE] border-[#6F73EE] border hover:bg-[#ffffff] hover:text-[#6F73EE] rounded-[5px] text-[#FFFFFF] font-normal text-[#ffffff] text-xs"
+              >
+                Купить в 1 клик
+              </button>
+            </div>
+          </div>
+          <div class="border border-[#EAEBED] rounded-[10px]">
+            <div class="for_back_image_section_2 px-[10px] py-[10px]">
+              <div class="flex items-center justify-between mb-[50px]">
+                <p
+                  class="px-[5px] py-[px] bg-[#75D14A] rounded-[5px] text-[#ffffff] font-normal text-xs px-[8px] py-[5px] cursor-pointer"
+                >
+                  Новинка
+                </p>
+                <i
+                  class="fa-solid fa-scale-balanced cursor-pointer p-[8px] bg-[#FFFFFF33] text-[#5D6C7B] backdrop-blur-sm rounded-full"
+                ></i>
+              </div>
+              <div class="flex justify-between items-center">
+                <button>
+                  <i
+                    class="fa-solid fa-arrow-left py-[8px] px-[8px] bg-[#FFFFFF] rounded-full text-[#6F73EE]"
+                  ></i>
+                </button>
+                <button>
+                  <i
+                    class="fa-solid fa-arrow-right py-[8px] px-[8px] bg-[#FFFFFF] rounded-full text-[#6F73EE]"
+                  ></i>
+                </button>
+              </div>
+            </div>
+            <div class="my-[20px] px-[16px]">
+              <h4 class="font-semibold text-lg text-[#282739]">
+                Kugoo Kirin M4
+              </h4>
+              <div class="flex gap-[24px] items-center mb-[17px] mt-[21px]">
+                <div class="flex gap-[10px]">
+                  <i class="fa-solid fa-car-battery text-[#5D6C7B]"></i>
+                  <p class="font-normal text-xs text-[#5D6C7B]">2000 mAh</p>
+                </div>
+                <div class="flex gap-[10px]">
+                  <i class="fa-solid fa-gauge text-[#5D6C7B]"></i>
+                  <p class="font-normal text-xs text-[#5D6C7B]">1,2 л.с.</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-[38px] mb-[25px]">
+                <div class="flex gap-[10px]">
+                  <i class="fa-solid fa-gauge text-[#5D6C7B]"></i>
+                  <p class="font-normal text-xs text-[#5D6C7B]">60 км/ч</p>
+                </div>
+                <div class="flex gap-[10px]">
+                  <i class="fa-solid fa-stopwatch text-[#5D6C7B]"></i>
+                  <p class="font-normal text-xs text-[#5D6C7B]">5 часов</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-[28px] mb-[16px]">
+                <div>
+                  <del class="font-normal text-xs text-[#5D6C7B]">39 900 ₽</del>
+                  <h3 class="font-semibold text-xl text-[#282739]">29 900 ₽</h3>
+                </div>
+                <div class="mt-[10px]">
+                  <i
+                    class="fa-solid fa-basket-shopping p-[10px] border-[#EAEBED] border text-[#6F73EE] rounded-full"
+                  ></i>
+                  <i
+                    class="fa-regular fa-heart p-[10px] border-[#EAEBED] border text-[#6F73EE] rounded-full"
+                  ></i>
+                </div>
+              </div>
+              <button
+                class="flex items-center py-[10px] px-[64px] bg-[#6F73EE] border-[#6F73EE] border hover:bg-[#ffffff] hover:text-[#6F73EE] rounded-[5px] text-[#FFFFFF] font-normal text-[#ffffff] text-xs"
+              >
+                Купить в 1 клик
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-wrap items-center justify-center gap-[30px] mb-[30px]"
+        >
+          <div class="border border-[#EAEBED] rounded-[10px]">
+            <div class="for_back_image_section_2 px-[10px] py-[10px]">
+              <div class="flex items-center justify-between mb-[50px]">
+                <p
+                  class="px-[5px] py-[px] bg-[#EE685F] rounded-[5px] text-[#ffffff] font-normal text-xs px-[8px] py-[5px] cursor-pointer"
+                >
+                  ХИТ
+                </p>
+                <i
+                  class="fa-solid fa-scale-balanced cursor-pointer p-[8px] bg-[#FFFFFF33] text-[#5D6C7B] backdrop-blur-sm rounded-full"
+                ></i>
+              </div>
+              <div class="flex justify-between items-center">
+                <button>
+                  <i
+                    class="fa-solid fa-arrow-left py-[8px] px-[8px] bg-[#FFFFFF] rounded-full text-[#6F73EE]"
+                  ></i>
+                </button>
+                <button>
+                  <i
+                    class="fa-solid fa-arrow-right py-[8px] px-[8px] bg-[#FFFFFF] rounded-full text-[#6F73EE]"
+                  ></i>
+                </button>
+              </div>
+            </div>
+            <div class="my-[20px] px-[16px]">
+              <h4 class="font-semibold text-lg text-[#282739]">
+                Kugoo Kirin M4
+              </h4>
+              <div class="flex gap-[24px] items-center mb-[17px] mt-[21px]">
+                <div class="flex gap-[10px]">
+                  <i class="fa-solid fa-car-battery text-[#5D6C7B]"></i>
+                  <p class="font-normal text-xs text-[#5D6C7B]">2000 mAh</p>
+                </div>
+                <div class="flex gap-[10px]">
+                  <i class="fa-solid fa-gauge text-[#5D6C7B]"></i>
+                  <p class="font-normal text-xs text-[#5D6C7B]">1,2 л.с.</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-[38px] mb-[25px]">
+                <div class="flex gap-[10px]">
+                  <i class="fa-solid fa-gauge text-[#5D6C7B]"></i>
+                  <p class="font-normal text-xs text-[#5D6C7B]">60 км/ч</p>
+                </div>
+                <div class="flex gap-[10px]">
+                  <i class="fa-solid fa-stopwatch text-[#5D6C7B]"></i>
+                  <p class="font-normal text-xs text-[#5D6C7B]">5 часов</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-[28px] mb-[16px]">
+                <div>
+                  <del class="font-normal text-xs text-[#5D6C7B]">39 900 ₽</del>
+                  <h3 class="font-semibold text-xl text-[#282739]">29 900 ₽</h3>
+                </div>
+                <div class="mt-[10px]">
+                  <i
+                    class="fa-solid fa-basket-shopping p-[10px] border-[#EAEBED] border text-[#6F73EE] rounded-full"
+                  ></i>
+                  <i
+                    class="fa-regular fa-heart p-[10px] border-[#EAEBED] border text-[#6F73EE] rounded-full"
+                  ></i>
+                </div>
+              </div>
+              <button
+                class="py-[10px] px-[64px] bg-[#6F73EE] border-[#6F73EE] border hover:bg-[#ffffff] hover:text-[#6F73EE] rounded-[5px] text-[#FFFFFF] font-normal text-[#ffffff] text-xs"
+              >
+                Купить в 1 клик
+              </button>
+            </div>
+          </div>
+          <div class="border border-[#EAEBED] rounded-[10px]">
+            <div class="for_back_image_section_2 px-[10px] py-[10px]">
+              <div class="flex items-center justify-between mb-[50px]">
+                <p
+                  class="px-[5px] py-[px] bg-[#75D14A] rounded-[5px] text-[#ffffff] font-normal text-xs px-[8px] py-[5px] cursor-pointer"
+                >
+                  Новинка
+                </p>
+                <i
+                  class="fa-solid fa-scale-balanced cursor-pointer p-[8px] bg-[#FFFFFF33] text-[#5D6C7B] backdrop-blur-sm rounded-full"
+                ></i>
+              </div>
+              <div class="flex justify-between items-center">
+                <button>
+                  <i
+                    class="fa-solid fa-arrow-left py-[8px] px-[8px] bg-[#FFFFFF] rounded-full text-[#6F73EE]"
+                  ></i>
+                </button>
+                <button>
+                  <i
+                    class="fa-solid fa-arrow-right py-[8px] px-[8px] bg-[#FFFFFF] rounded-full text-[#6F73EE]"
+                  ></i>
+                </button>
+              </div>
+            </div>
+            <div class="my-[20px] px-[16px]">
+              <h4 class="font-semibold text-lg text-[#282739]">
+                Kugoo Kirin M4
+              </h4>
+              <div class="flex gap-[24px] items-center mb-[17px] mt-[21px]">
+                <div class="flex gap-[10px]">
+                  <i class="fa-solid fa-car-battery text-[#5D6C7B]"></i>
+                  <p class="font-normal text-xs text-[#5D6C7B]">2000 mAh</p>
+                </div>
+                <div class="flex gap-[10px]">
+                  <i class="fa-solid fa-gauge text-[#5D6C7B]"></i>
+                  <p class="font-normal text-xs text-[#5D6C7B]">1,2 л.с.</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-[38px] mb-[25px]">
+                <div class="flex gap-[10px]">
+                  <i class="fa-solid fa-gauge text-[#5D6C7B]"></i>
+                  <p class="font-normal text-xs text-[#5D6C7B]">60 км/ч</p>
+                </div>
+                <div class="flex gap-[10px]">
+                  <i class="fa-solid fa-stopwatch text-[#5D6C7B]"></i>
+                  <p class="font-normal text-xs text-[#5D6C7B]">5 часов</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-[28px] mb-[16px]">
+                <div>
+                  <del class="font-normal text-xs text-[#5D6C7B]">39 900 ₽</del>
+                  <h3 class="font-semibold text-xl text-[#282739]">29 900 ₽</h3>
+                </div>
+                <div class="mt-[10px]">
+                  <i
+                    class="fa-solid fa-basket-shopping p-[10px] border-[#EAEBED] border text-[#6F73EE] rounded-full"
+                  ></i>
+                  <i
+                    class="fa-regular fa-heart p-[10px] border-[#EAEBED] border text-[#6F73EE] rounded-full"
+                  ></i>
+                </div>
+              </div>
+              <button
+                class="flex items-center py-[10px] px-[64px] bg-[#6F73EE] border-[#6F73EE] border hover:bg-[#ffffff] hover:text-[#6F73EE] rounded-[5px] text-[#FFFFFF] font-normal text-[#ffffff] text-xs"
+              >
+                Купить в 1 клик
+              </button>
+            </div>
+          </div>
+          <div class="border border-[#EAEBED] rounded-[10px]">
+            <div class="for_back_image_section_2 px-[10px] py-[10px]">
+              <div class="flex items-center justify-between mb-[50px]">
+                <p
+                  class="px-[5px] py-[px] bg-[#EE685F] rounded-[5px] text-[#ffffff] font-normal text-xs px-[8px] py-[5px] cursor-pointer"
+                >
+                  ХИТ
+                </p>
+                <i
+                  class="fa-solid fa-scale-balanced cursor-pointer p-[8px] bg-[#FFFFFF33] text-[#5D6C7B] backdrop-blur-sm rounded-full"
+                ></i>
+              </div>
+              <div class="flex justify-between items-center">
+                <button>
+                  <i
+                    class="fa-solid fa-arrow-left py-[8px] px-[8px] bg-[#FFFFFF] rounded-full text-[#6F73EE]"
+                  ></i>
+                </button>
+                <button>
+                  <i
+                    class="fa-solid fa-arrow-right py-[8px] px-[8px] bg-[#FFFFFF] rounded-full text-[#6F73EE]"
+                  ></i>
+                </button>
+              </div>
+            </div>
+            <div class="my-[20px] px-[16px]">
+              <h4 class="font-semibold text-lg text-[#282739]">
+                Kugoo Kirin M4
+              </h4>
+              <div class="flex gap-[24px] items-center mb-[17px] mt-[21px]">
+                <div class="flex gap-[10px]">
+                  <i class="fa-solid fa-car-battery text-[#5D6C7B]"></i>
+                  <p class="font-normal text-xs text-[#5D6C7B]">2000 mAh</p>
+                </div>
+                <div class="flex gap-[10px]">
+                  <i class="fa-solid fa-gauge text-[#5D6C7B]"></i>
+                  <p class="font-normal text-xs text-[#5D6C7B]">1,2 л.с.</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-[38px] mb-[25px]">
+                <div class="flex gap-[10px]">
+                  <i class="fa-solid fa-gauge text-[#5D6C7B]"></i>
+                  <p class="font-normal text-xs text-[#5D6C7B]">60 км/ч</p>
+                </div>
+                <div class="flex gap-[10px]">
+                  <i class="fa-solid fa-stopwatch text-[#5D6C7B]"></i>
+                  <p class="font-normal text-xs text-[#5D6C7B]">5 часов</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-[28px] mb-[16px]">
+                <div>
+                  <del class="font-normal text-xs text-[#5D6C7B]">39 900 ₽</del>
+                  <h3 class="font-semibold text-xl text-[#282739]">29 900 ₽</h3>
+                </div>
+                <div class="mt-[10px]">
+                  <i
+                    class="fa-solid fa-basket-shopping p-[10px] border-[#EAEBED] border text-[#6F73EE] rounded-full"
+                  ></i>
+                  <i
+                    class="fa-regular fa-heart p-[10px] border-[#EAEBED] border text-[#6F73EE] rounded-full"
+                  ></i>
+                </div>
+              </div>
+              <button
+                class="py-[10px] px-[64px] bg-[#6F73EE] border-[#6F73EE] border hover:bg-[#ffffff] hover:text-[#6F73EE] rounded-[5px] text-[#FFFFFF] font-normal text-[#ffffff] text-xs"
+              >
+                Купить в 1 клик
+              </button>
+            </div>
+          </div>
+          <div class="border border-[#EAEBED] rounded-[10px]">
+            <div class="for_back_image_section_2 px-[10px] py-[10px]">
+              <div class="flex items-center justify-between mb-[50px]">
+                <p
+                  class="px-[5px] py-[px] bg-[#75D14A] rounded-[5px] text-[#ffffff] font-normal text-xs px-[8px] py-[5px] cursor-pointer"
+                >
+                  Новинка
+                </p>
+                <i
+                  class="fa-solid fa-scale-balanced cursor-pointer p-[8px] bg-[#FFFFFF33] text-[#5D6C7B] backdrop-blur-sm rounded-full"
+                ></i>
+              </div>
+              <div class="flex justify-between items-center">
+                <button>
+                  <i
+                    class="fa-solid fa-arrow-left py-[8px] px-[8px] bg-[#FFFFFF] rounded-full text-[#6F73EE]"
+                  ></i>
+                </button>
+                <button>
+                  <i
+                    class="fa-solid fa-arrow-right py-[8px] px-[8px] bg-[#FFFFFF] rounded-full text-[#6F73EE]"
+                  ></i>
+                </button>
+              </div>
+            </div>
+            <div class="my-[20px] px-[16px]">
+              <h4 class="font-semibold text-lg text-[#282739]">
+                Kugoo Kirin M4
+              </h4>
+              <div class="flex gap-[24px] items-center mb-[17px] mt-[21px]">
+                <div class="flex gap-[10px]">
+                  <i class="fa-solid fa-car-battery text-[#5D6C7B]"></i>
+                  <p class="font-normal text-xs text-[#5D6C7B]">2000 mAh</p>
+                </div>
+                <div class="flex gap-[10px]">
+                  <i class="fa-solid fa-gauge text-[#5D6C7B]"></i>
+                  <p class="font-normal text-xs text-[#5D6C7B]">1,2 л.с.</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-[38px] mb-[25px]">
+                <div class="flex gap-[10px]">
+                  <i class="fa-solid fa-gauge text-[#5D6C7B]"></i>
+                  <p class="font-normal text-xs text-[#5D6C7B]">60 км/ч</p>
+                </div>
+                <div class="flex gap-[10px]">
+                  <i class="fa-solid fa-stopwatch text-[#5D6C7B]"></i>
+                  <p class="font-normal text-xs text-[#5D6C7B]">5 часов</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-[28px] mb-[16px]">
+                <div>
+                  <del class="font-normal text-xs text-[#5D6C7B]">39 900 ₽</del>
+                  <h3 class="font-semibold text-xl text-[#282739]">29 900 ₽</h3>
+                </div>
+                <div class="mt-[10px]">
+                  <i
+                    class="fa-solid fa-basket-shopping p-[10px] border-[#EAEBED] border text-[#6F73EE] rounded-full"
+                  ></i>
+                  <i
+                    class="fa-regular fa-heart p-[10px] border-[#EAEBED] border text-[#6F73EE] rounded-full"
+                  ></i>
+                </div>
+              </div>
+              <button
+                class="flex items-center py-[10px] px-[64px] bg-[#6F73EE] border-[#6F73EE] border hover:bg-[#ffffff] hover:text-[#6F73EE] rounded-[5px] text-[#FFFFFF] font-normal text-[#ffffff] text-xs"
+              >
+                Купить в 1 клик
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-[65px] mb-[110px] flex justify-center">
+        <button
+          class="font-normal text-sm text-[#6F73EE] text-center py-[15px] px-[25px] rounded-[5px] border border-[#6F73EE] bg-[#ffffff] hover:bg-[#6F73EE] hover:text-[#ffffff]"
+        >
+          Смотреть все
+        </button>
+      </div>
+    </section>
+  </body>
+</html>
