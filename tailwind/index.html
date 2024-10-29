@@ -85,9 +85,18 @@
         background-image: url(./images/XXXL-7\ 1.png);
         width: 378px;
         height: 284px;
-      }
-      .back_img_8:hover {
+        background-size: cover;
+        background-position: center;
         border-radius: 5px;
+        transition: filter 0.3s ease-in-out;
+      }
+
+      .head_0:hover .back_img_8 {
+        filter: blur(3px); /* Hover qilinganda fon blur qilinadi */
+      }
+
+      .hover_uchun {
+        transition: opacity 0.3s ease-in-out; /* Opacity silliq o'tishi uchun */
       }
     </style>
   </head>
@@ -1427,10 +1436,16 @@
     </section>
 
     <section class="mb-[100px]">
-      <div>
-        <div class="back_img_8 pl-[22px] pt-[88px] hover:blur-[2px]">
-          <div class="opacity-0 hover:opacity-100">
-            <div class="flex gap-[15px] items-center mb-[20px]">
+      <div class="flex flex-wrap justify-center items-center gap-[20px]">
+        <div class="relative head_0 group">
+          <div class="back_img_8"></div>
+
+          <div
+            class="absolute top-0 left-0 w-full h-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out hover_uchun z-10"
+          >
+            <div
+              class="flex gap-[15px] items-center mb-[10px] pl-[20px] pt-[60px]"
+            >
               <img class="rounded-full" src="./images/XXXL-8 5.png" alt="" />
               <div>
                 <p class="text-base font-normal text-[#FFFFFF]">Илья М.</p>
@@ -1439,7 +1454,7 @@
                 >
               </div>
             </div>
-            <div>
+            <div class="pl-[20px]">
               <i class="fa-solid fa-star text-[#FFD12E]"></i>
               <i class="fa-solid fa-star text-[#FFD12E]"></i>
               <i class="fa-solid fa-star text-[#FFD12E]"></i>
@@ -1449,7 +1464,192 @@
                 >23 сентября 2020</span
               >
             </div>
-            <div>
+            <div class="pl-[20px]">
+              <p class="text-[#FFFFFF] font-normal text-xs w-[290px] mt-[12px]">
+                Магазин очень понравился, быстро обслужили, персонал хорошо
+                знает свой товар, вежливо и грамотно консультирует, ассортимент
+                внушительный, а если чего нет сейчас в наличии, то можно без
+                проблем заказать на сайте, так что всем рекомендую!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="relative head_0 group">
+          <div class="back_img_8"></div>
+
+          <div
+            class="absolute top-0 left-0 w-full h-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out hover_uchun z-10"
+          >
+            <div
+              class="flex gap-[15px] items-center mb-[10px] pl-[20px] pt-[60px]"
+            >
+              <img class="rounded-full" src="./images/XXXL-8 5.png" alt="" />
+              <div>
+                <p class="text-base font-normal text-[#FFFFFF]">Илья М.</p>
+                <span class="text-xs text-[#FFFFFF] dont-normal"
+                  >Знаток города 2 уровня</span
+                >
+              </div>
+            </div>
+            <div class="pl-[20px]">
+              <i class="fa-solid fa-star text-[#FFD12E]"></i>
+              <i class="fa-solid fa-star text-[#FFD12E]"></i>
+              <i class="fa-solid fa-star text-[#FFD12E]"></i>
+              <i class="fa-solid fa-star text-[#FFD12E]"></i>
+              <i class="fa-solid fa-star text-[#FFD12E] mr-[14px]"></i>
+              <span class="text-[#FFFFFF] font-normal text-xs"
+                >23 сентября 2020</span
+              >
+            </div>
+            <div class="pl-[20px]">
+              <p class="text-[#FFFFFF] font-normal text-xs w-[290px] mt-[12px]">
+                Магазин очень понравился, быстро обслужили, персонал хорошо
+                знает свой товар, вежливо и грамотно консультирует, ассортимент
+                внушительный, а если чего нет сейчас в наличии, то можно без
+                проблем заказать на сайте, так что всем рекомендую!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="relative head_0 group">
+          <div class="back_img_8"></div>
+
+          <div
+            class="absolute top-0 left-0 w-full h-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out hover_uchun z-10"
+          >
+            <div
+              class="flex gap-[15px] items-center mb-[10px] pl-[20px] pt-[60px]"
+            >
+              <img class="rounded-full" src="./images/XXXL-8 5.png" alt="" />
+              <div>
+                <p class="text-base font-normal text-[#FFFFFF]">Илья М.</p>
+                <span class="text-xs text-[#FFFFFF] dont-normal"
+                  >Знаток города 2 уровня</span
+                >
+              </div>
+            </div>
+            <div class="pl-[20px]">
+              <i class="fa-solid fa-star text-[#FFD12E]"></i>
+              <i class="fa-solid fa-star text-[#FFD12E]"></i>
+              <i class="fa-solid fa-star text-[#FFD12E]"></i>
+              <i class="fa-solid fa-star text-[#FFD12E]"></i>
+              <i class="fa-solid fa-star text-[#FFD12E] mr-[14px]"></i>
+              <span class="text-[#FFFFFF] font-normal text-xs"
+                >23 сентября 2020</span
+              >
+            </div>
+            <div class="pl-[20px]">
+              <p class="text-[#FFFFFF] font-normal text-xs w-[290px] mt-[12px]">
+                Магазин очень понравился, быстро обслужили, персонал хорошо
+                знает свой товар, вежливо и грамотно консультирует, ассортимент
+                внушительный, а если чего нет сейчас в наличии, то можно без
+                проблем заказать на сайте, так что всем рекомендую!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="relative head_0 group">
+          <div class="back_img_8"></div>
+
+          <div
+            class="absolute top-0 left-0 w-full h-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out hover_uchun z-10"
+          >
+            <div
+              class="flex gap-[15px] items-center mb-[10px] pl-[20px] pt-[60px]"
+            >
+              <img class="rounded-full" src="./images/XXXL-8 5.png" alt="" />
+              <div>
+                <p class="text-base font-normal text-[#FFFFFF]">Илья М.</p>
+                <span class="text-xs text-[#FFFFFF] dont-normal"
+                  >Знаток города 2 уровня</span
+                >
+              </div>
+            </div>
+            <div class="pl-[20px]">
+              <i class="fa-solid fa-star text-[#FFD12E]"></i>
+              <i class="fa-solid fa-star text-[#FFD12E]"></i>
+              <i class="fa-solid fa-star text-[#FFD12E]"></i>
+              <i class="fa-solid fa-star text-[#FFD12E]"></i>
+              <i class="fa-solid fa-star text-[#FFD12E] mr-[14px]"></i>
+              <span class="text-[#FFFFFF] font-normal text-xs"
+                >23 сентября 2020</span
+              >
+            </div>
+            <div class="pl-[20px]">
+              <p class="text-[#FFFFFF] font-normal text-xs w-[290px] mt-[12px]">
+                Магазин очень понравился, быстро обслужили, персонал хорошо
+                знает свой товар, вежливо и грамотно консультирует, ассортимент
+                внушительный, а если чего нет сейчас в наличии, то можно без
+                проблем заказать на сайте, так что всем рекомендую!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="relative head_0 group">
+          <div class="back_img_8"></div>
+
+          <div
+            class="absolute top-0 left-0 w-full h-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out hover_uchun z-10"
+          >
+            <div
+              class="flex gap-[15px] items-center mb-[10px] pl-[20px] pt-[60px]"
+            >
+              <img class="rounded-full" src="./images/XXXL-8 5.png" alt="" />
+              <div>
+                <p class="text-base font-normal text-[#FFFFFF]">Илья М.</p>
+                <span class="text-xs text-[#FFFFFF] dont-normal"
+                  >Знаток города 2 уровня</span
+                >
+              </div>
+            </div>
+            <div class="pl-[20px]">
+              <i class="fa-solid fa-star text-[#FFD12E]"></i>
+              <i class="fa-solid fa-star text-[#FFD12E]"></i>
+              <i class="fa-solid fa-star text-[#FFD12E]"></i>
+              <i class="fa-solid fa-star text-[#FFD12E]"></i>
+              <i class="fa-solid fa-star text-[#FFD12E] mr-[14px]"></i>
+              <span class="text-[#FFFFFF] font-normal text-xs"
+                >23 сентября 2020</span
+              >
+            </div>
+            <div class="pl-[20px]">
+              <p class="text-[#FFFFFF] font-normal text-xs w-[290px] mt-[12px]">
+                Магазин очень понравился, быстро обслужили, персонал хорошо
+                знает свой товар, вежливо и грамотно консультирует, ассортимент
+                внушительный, а если чего нет сейчас в наличии, то можно без
+                проблем заказать на сайте, так что всем рекомендую!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="relative head_0 group">
+          <div class="back_img_8"></div>
+
+          <div
+            class="absolute top-0 left-0 w-full h-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out hover_uchun z-10"
+          >
+            <div
+              class="flex gap-[15px] items-center mb-[10px] pl-[20px] pt-[60px]"
+            >
+              <img class="rounded-full" src="./images/XXXL-8 5.png" alt="" />
+              <div>
+                <p class="text-base font-normal text-[#FFFFFF]">Илья М.</p>
+                <span class="text-xs text-[#FFFFFF] dont-normal"
+                  >Знаток города 2 уровня</span
+                >
+              </div>
+            </div>
+            <div class="pl-[20px]">
+              <i class="fa-solid fa-star text-[#FFD12E]"></i>
+              <i class="fa-solid fa-star text-[#FFD12E]"></i>
+              <i class="fa-solid fa-star text-[#FFD12E]"></i>
+              <i class="fa-solid fa-star text-[#FFD12E]"></i>
+              <i class="fa-solid fa-star text-[#FFD12E] mr-[14px]"></i>
+              <span class="text-[#FFFFFF] font-normal text-xs"
+                >23 сентября 2020</span
+              >
+            </div>
+            <div class="pl-[20px]">
               <p class="text-[#FFFFFF] font-normal text-xs w-[290px] mt-[12px]">
                 Магазин очень понравился, быстро обслужили, персонал хорошо
                 знает свой товар, вежливо и грамотно консультирует, ассортимент
@@ -1462,7 +1662,7 @@
       </div>
     </section>
 
-    <!-- <section>
+    <section>
       <div class="flex justify-center gap-[630px] items-center mb-[20px]">
         <h1 class="font-semibold text-5xl text-[#282739]">Видеообзоры</h1>
         <a class="font-normal text-sm text-[#6F73EE]" href="#"
@@ -1477,6 +1677,6 @@
           разных моделей на нашем YouTube-канале.
         </p>
       </div>
-    </section> -->
+    </section>
   </body>
 </html>
